@@ -1,0 +1,21 @@
+<div class="row p-5">
+    <div class="col-md-8">
+        <h3>Posts Data</h3>
+        <table class="table">
+            <thead>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Category</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let post of posts">
+                    <td>{{ post.id }}</td>
+                    <td>{{ post.title }}</td>
+                    <td>{{ post.description }}</td>
+                    <td>{{ post.categoryId }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
